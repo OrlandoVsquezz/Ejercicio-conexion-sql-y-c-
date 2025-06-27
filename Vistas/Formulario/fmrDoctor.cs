@@ -28,5 +28,31 @@ namespace Vistas.Formulario
         {
             MostrarDoctores();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            // Una instancia es un objeto (crear un objeto)
+            // Creamos el objeto doctor para mandar la informacion del formulario por el metodo set 
+            Doctor Doc = new Doctor();
+            Doc.Nombre = txtNombre.Text;
+            Doc.Apellido = txtApellido.Text;
+            Doc.Especialidad = txtEspecialidad.Text;
+            Doc.Cargo = txtCargo.Text;
+            Doc.InsertarDoctores();
+            limpiarCampoRegistrado();
+            MostrarDoctores();
+        }
+
+        private void limpiarCampoRegistrado()
+        {
+            MessageBox.Show("Registro exitoso");
+            txtApellido.Clear();
+            txtCargo.Clear();
+            txtEspecialidad.Clear();
+            txtNombre.Clear();
+        }
+
+
+
     }
 }

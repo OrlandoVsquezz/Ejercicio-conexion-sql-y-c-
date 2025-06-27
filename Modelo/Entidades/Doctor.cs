@@ -28,7 +28,7 @@ namespace Modelo.Entidades
 
         public static DataTable CargarDoctores()
         {
-            // Necesioto traer la conexion
+            // Necesito traer la conexion
             SqlConnection conexion = ConexionDB.Conectar();
             // Vamos a crear el query
             string consultaQuery = "select nombre, apellido, especialidad, cargo from Doctores";
@@ -38,6 +38,28 @@ namespace Modelo.Entidades
             // Vamos a llenar el data adapter pasandole una data virtual
             add.Fill(dataVirtual);
             return dataVirtual;
+        }
+
+        public bool InsertarDoctores()
+        {
+            // Siempre hay que hacer una conexion, esto es para que veams la notificacion de "(se afecto 1 fila)", dando solo el numero
+            SqlConnection conexion = ConexionDB.Conectar();
+            string consultaQueryInsertar = "insert into Doctores (nombre, apellido, especialidad, cargo) values (@nombre, @apellido, @especialidad, @cargo)";
+            SqlCommand insertar = new SqlCommand(consultaQueryInsertar, conexion); // Este es para insertar informacion el sqlcommand
+            insertar.Parameters.AddWithValue("@nombre", nombre);
+            insertar.Parameters.AddWithValue("@apellido", apellido);
+            insertar.Parameters.AddWithValue("@especialidad", especialidad);
+            insertar.Parameters.AddWithValue("@cargo", cargo);
+            // Ahora ya insertamos valores, pero toca validar si se afectaron las filas, usaremos ExecuteNonQuery 
+            // Debemos verificar si lo que se inserto afecto filas 
+            if (insertar.ExecuteNonQuery()>0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }

@@ -4,3 +4,9 @@ C:\Users\Estudiante\Desktop\Sistema administrativo de doctores 2A\Modelo\obj\Deb
 C:\Users\Estudiante\Desktop\Sistema administrativo de doctores 2A\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
 C:\Users\Estudiante\Desktop\Sistema administrativo de doctores 2A\Modelo\obj\Debug\Modelo.dll
 C:\Users\Estudiante\Desktop\Sistema administrativo de doctores 2A\Modelo\obj\Debug\Modelo.pdb
+C:\Users\Estudiante\Desktop\Ejercicio-conexion-sql-y-c-\Modelo\bin\Debug\Modelo.dll
+C:\Users\Estudiante\Desktop\Ejercicio-conexion-sql-y-c-\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Estudiante\Desktop\Ejercicio-conexion-sql-y-c-\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\Ejercicio-conexion-sql-y-c-\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\Ejercicio-conexion-sql-y-c-\Modelo\obj\Debug\Modelo.dll
+C:\Users\Estudiante\Desktop\Ejercicio-conexion-sql-y-c-\Modelo\obj\Debug\Modelo.pdb
